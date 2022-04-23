@@ -1,0 +1,43 @@
+.bars {
+  .bars-notifications {
+    transition: all ease-in-out 0.3s;
+    h4 {
+      font-size: 1rem;
+    }
+    span {
+      font-size: 0.9rem;
+    }
+    div:nth-child(1) {
+      padding: 12px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $blue-dark;
+      i {
+        color: $text-gray;
+      }
+    }
+
+    .notification-box:not(:first-child) {
+      margin: 18px 0;
+    }
+    .notification-box {
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+      color: $text-gray;
+      .box-icon {
+        background: $blue-box;
+        color: $blue-dark;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .box-info {
+        margin: 0 auto;
+        h3 {
+          color: $blue-dark;
+        }
+      }
+    }
+  }
+}

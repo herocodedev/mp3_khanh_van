@@ -1,0 +1,15 @@
+.bars {
+  position: fixed;
+  right: 0;
+  width: $width-bars;
+  padding: 0 8px;
+  max-height: 100vh;
+  overflow: auto;
+  @media screen and (max-width: 1023.98px) {
+    position: relative;
+    width: 100%;
+  }
+}
+@import "_barNotification.scss";
+@import "_barArtist.scss";
+@import "_barSong.scss";

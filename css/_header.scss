@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12px;
+  color: $text-gray;
+  font-size: 1.2rem;
+  .header-menu-list {
+    display: flex;
+    padding: 16px 0;
+  }
+  .header-menu-item:not(:first-child) {
+    margin-left: 36px;
+  }
+  .header-menu-item.isActive {
+    color: $blue-dark;
+    font-weight: bold;
+  }
+}

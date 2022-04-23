@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  padding-right: 30px;
+  margin: 0 auto;
+  width: calc(100% - calc($width-bars + $width-category));
+  @media screen and (max-width: 1023.98px) {
+    width: 100%;
+  }
+}
+@import "_header.scss";
+@import "_content.scss";

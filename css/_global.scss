@@ -1,0 +1,121 @@
+$blue-dark: #283353;
+$text-gray: #7c8db5;
+$orange-custom: #fa7c05;
+$red-custom: #ec1f55;
+$blue-box: #f2f7ff;
+
+$width-category: 200px;
+$width-bars: 250px;
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.container {
+  // max-width: 1170px;
+  padding: 0 15px;
+  display: flex;
+  @media screen and (max-width: 1023.98px) {
+    flex-direction: column;
+  }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  display: block;
+  width: 4px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  // background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  border-right: none;
+  border-left: none;
+  border-radius: 18px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  margin-top: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: $blue-dark;
+  i {
+    margin-right: 8px;
+  }
+  &-name {
+    font-weight: 800;
+    color: $blue-dark;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+// toggle btn change background
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+.toggle-switch label {
+  cursor: pointer;
+}
+.toggle-switch label .toggle-track {
+  display: block;
+  height: 20px;
+  width: 40px;
+  background: #eee;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.toggle-switch .toggle-track:before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 20px;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: right 0.2s ease-in;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label .toggle-track:before {
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+  right: 20px;
+}
+
+.change-background-btn {
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  @media screen and (max-width: 767.98px) {
+    top: 50px;
+  }
+}
