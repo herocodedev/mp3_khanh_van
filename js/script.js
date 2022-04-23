@@ -2,8 +2,8 @@ const data = [
   {
     name: "Cô Đơn Không Giành Cho Ai",
     singer: "Khánh Văn",
-    path: "../data/audio/KhanhVan.mp3",
-    image: "../img/casikhanhvan.jpg",
+    path: "./data/audio/KhanhVan.mp3",
+    image: "./img/casikhanhvan.jpg",
   },
 ];
 // Global
